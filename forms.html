@@ -7,13 +7,14 @@
 	<input type="" name="" id="input1">
 	<input type="" name="" id="input2">
 	<input type="" name="" id="input3">
-	<button>Submit</button>
+	<button onclick="getInput()">Submit</button>
+	<img src="">
 </body>
 </html>
 <script>
 	function getInput() {
-		var x = document.getElementById('input1').value;
-		var y = document.getElementById('input2').value;
+		var x = parseInt(document.getElementById('input1').value);
+		var y = parseInt(document.getElementById('input2').value);
 		var z = document.getElementById('input3').value = x+y;
 		return z;
 	}
