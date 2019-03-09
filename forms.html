@@ -8,11 +8,13 @@
 	<input type="" name="" id="input2">
 	<input type="" name="" id="input3">
 	<button onclick="getInput()">Add</button>
-	<img src="wisestday.gif" alt="wisestday image" id="wisestdayImage">
+	<img src="wisestday.gif" alt="wisestday image" id="wisestday_image">
 </body>
 </html>
 <script>
 	function getInput() {
+		let wisestdayImage =document.getElementById('wisestday_image');
+		wisestdayImage.src = 'alive.jpg';
 		var x = parseInt(document.getElementById('input1').value);
 		var y = parseInt(document.getElementById('input2').value);
 		var z = document.getElementById('input3').value = x+y;
