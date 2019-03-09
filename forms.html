@@ -14,13 +14,14 @@
 </html>
 <script>
 	function getInput() {
-		let wisestdayImage =document.getElementById('wisestday_image');
-		wisestdayImage.src = 'alive.jpg';
 		var x = parseInt(document.getElementById('input1').value);
 		var y = parseInt(document.getElementById('input2').value);
 		var z = document.getElementById('input3').value = x+y;
 		return z;
 	}
 
-	
+	function changeImage() {
+		let wisestdayImage =document.getElementById('wisestday_image');
+		wisestdayImage.src = 'alive.jpg';
+	}
 </script>
