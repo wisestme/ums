@@ -4,12 +4,12 @@
 	<title></title>
 </head>
 <body>
-	<input type="" name="" id="input1">
-	<input type="" name="" id="input2">
-	<input type="" name="" id="input3">
-	<button onclick="getInput()">Add</button>
-	<img src="wisestday.gif" alt="wisestday image" id="wisestday_image">
-	<button onclick="changeImage()">Change image</button>
+	<input type="" name="" id="input3"><br />
+	<input type="" name="" id="input2"><br />
+	<input type="" name="" id="input1"><br />
+	<button onclick="getInput()">Add</button><br />
+	<img src="wisestday.gif" alt="wisestday image" id="wisestday_image" onclick="changeImage()">
+	<button>Change image</button>
 </body>
 </html>
 <script>
@@ -21,7 +21,7 @@
 	}
 
 	function changeImage() {
-		let wisestdayImage =document.getElementById('wisestday_image');
+		let wisestdayImage = document.getElementById('wisestday_image');
 		wisestdayImage.src = 'alive.jpg';
 	}
 </script>
